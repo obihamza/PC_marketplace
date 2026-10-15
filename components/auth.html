@@ -1,0 +1,52 @@
+<div class="auth-overlay" id="authOverlay">
+        <div class="auth-popup">
+            <button type="button" class="auth-close" id="authClose" aria-label="Close">
+                <span class="material-symbols-rounded">close</span>
+            </button>
+
+            <div class="auth-header">
+                <div class="auth-icon">
+                    <span class="material-symbols-rounded">desktop_windows</span>
+                </div>
+                <h2 id="authTitle">Welcome to PC Market Jordan</h2>
+                <p id="authDescription">Sign in to access your marketplace account.</p>
+            </div>
+
+            <form id="authForm">
+                <div class="auth-field" id="nameField" hidden>
+                    <label for="authName">Full Name</label>
+                    <input type="text" id="authName" placeholder="Enter your name">
+                </div>
+
+                <div class="auth-field">
+                    <label for="authEmail">Email Address</label>
+                    <input type="email" id="authEmail" placeholder="you@example.com" required>
+                </div>
+
+                <div class="auth-field">
+                    <label for="authPassword">Password</label>
+                    <input type="password" id="authPassword" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="auth-submit" id="authSubmit">
+                    Log In
+                </button>
+            </form>
+
+            <p class="auth-switch" id="authSwitch">
+                Don't have an account?
+                <button type="button" id="authSwitchButton">Register</button>
+            </p>
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+            <button class="guest-button" id="guestButton" type="button">
+                <span class="material-symbols-rounded">person_outline</span>
+                Continue as Guest
+            </button>
+
+            <p class="auth-footer">Your PC hardware marketplace in Jordan.</p>
+        </div>
+    </div>

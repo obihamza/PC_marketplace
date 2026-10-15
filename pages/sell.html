@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Hardware | PC Market Jordan</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="shortcut icon" href="../assests/pictures/computer logo.png" type="image/icon">
+    <link rel="stylesheet" href="../assests/styles/index.css">
+    <link rel="stylesheet" href="../assests/styles/cart.css">
+    <link rel="stylesheet" href="../assests/styles/sell.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main class="sell-page">
+        <section class="sell-container">
+            <h1>Sell Your Hardware</h1>
+            <p class="sell-description">
+                List your PC hardware for other users to discover.
+            </p>
+
+            <form id="sellForm">
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="e.g. RTX 3060 12GB"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="productCategory">Category</label>
+                        <select id="productCategory" required>
+                            <option value="">Select category</option>
+                            <option value="cpu">Processor</option>
+                            <option value="gpu">Graphics Card</option>
+                            <option value="ram">RAM</option>
+                            <option value="storage">Storage</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productCondition">Condition</label>
+                        <select id="productCondition" required>
+                            <option value="">Select condition</option>
+                            <option value="new">New</option>
+                            <option value="used">Used</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="productPrice">Price (JOD)</label>
+                    <input
+                        type="number"
+                        id="productPrice"
+                        min="0.01"
+                        step="0.01"
+                        placeholder="e.g. 250"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="productDescription">Description</label>
+                    <textarea
+                        id="productDescription"
+                        rows="4"
+                        placeholder="Describe your product..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="productImage">Image URL (optional)</label>
+                    <input
+                        type="url"
+                        id="productImage"
+                        placeholder="https://example.com/image.jpg"
+                    >
+                </div>
+
+                <button type="submit" class="sell-submit">
+                    Add Product
+                </button>
+
+                <p id="formMessage" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <div id="chatbot-placeholder"></div>
+    
+    <div id="cart-placeholder"></div>
+    
+    <div id="auth-placeholder"></div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../scripts/components.js"></script>
+    <script src="../scripts/shared.js"></script>
+    <script src="../scripts/sell.js"></script>
+</body>
+</html>

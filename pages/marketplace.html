@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Market Jordan</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="shortcut icon" href="../assests/pictures/computer logo.png" type="image/icon">
+    <link rel="stylesheet" href="../assests/styles/index.css">
+    <link rel="stylesheet" href="../assests/styles/cart.css">
+    <link rel="stylesheet" href="../assests/styles/marketplace.css">
+</head>
+<body>
+    
+    <div id="header-placeholder"></div>
+
+    <main class="marketplace">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+
+            <button class="category active" data-category="all">
+                All Products
+            </button>
+
+            <button class="category" data-category="cpu">
+                Processors
+            </button>
+
+            <button class="category" data-category="gpu">
+                Graphics Cards
+            </button>
+
+            <button class="category" data-category="ram">
+                RAM
+            </button>
+
+            <button class="category" data-category="storage">
+                Storage
+            </button>
+
+            <button class="category" data-category="other">
+                Other
+            </button>
+        </aside>
+
+        <section class="products-section">
+            <h1>PC Hardware Marketplace</h1>
+            <p>Find the right hardware for your PC.</p>
+
+            <div class="filters">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search hardware..."
+                >
+
+                <select id="conditionFilter">
+                    <option value="all">All Conditions</option>
+                    <option value="new">New</option>
+                    <option value="used">Used</option>
+                </select>
+
+                <input
+                    type="number"
+                    id="priceFilter"
+                    placeholder="Maximum price (JOD)"
+                    min="0"
+                >
+            </div>
+
+            <p id="resultsCount"></p>
+
+            <div class="products-grid" id="productsGrid"></div>
+
+            <p id="noResults" hidden>
+                No products match your filters.
+            </p>
+        </section>
+    </main>
+
+    <div id="chatbot-placeholder"></div>
+
+    <div id="cart-placeholder"></div>
+    
+    <div id="footer-placeholder"></div>
+
+    <div id="auth-placeholder"></div>
+
+    <script src="../scripts/components.js"></script>
+    <script src="../scripts/shared.js"></script>
+    <script src="../scripts/marketplace.js"></script>
+</body>
+</html>
